@@ -20,7 +20,6 @@
 <body data-type="login">
 	<script src="static/assets/js/theme.js"></script>
 	<div class="am-g tpl-g">
-		<!-- 风格切换 -->
 		<div class="tpl-skiner">
 			<div class="tpl-skiner-toggle am-icon-cog"></div>
 			<div class="tpl-skiner-content">

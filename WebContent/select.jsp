@@ -29,7 +29,6 @@ body {
 <script src="static/js/bootstrap.min.js"></script>
 
 <body class="bootstrap-admin-with-small-navbar">
-	<!-- 判断是否已经登录 -->
 	<%
 		AdminBean admin = new AdminBean();
 		String aid = (String) session.getAttribute("aid");
@@ -239,7 +238,7 @@ body {
 							<label for="firstname" class="col-sm-3 control-label">이름</label>
 							<div class="col-sm-7">
 								<input type="text" class="form-control" id="name" name="name"
-									placeholder="请이름을 입력하세요"
+									placeholder="이름을 입력하세요"
 									value='<%out.write(admin.getName());%>'> <label
 									class="control-label" for="name" style="display: none"></label>
 							</div>

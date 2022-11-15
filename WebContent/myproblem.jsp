@@ -53,7 +53,6 @@ body {
 									<li role="presentation" class="divider"></li>
 									<li><a href="#updatepwd" data-toggle="modal">비밀번호 변경</a></li>
 									<li role="presentation" class="divider"></li>
-									<!-- href="#identifier"  来指定要切换的特定的模态框（带有 id="identifier"）。-->
 									<li><a href="/books/login.jsp">탈퇴</a></li>
 								</ul>
 							</li>
@@ -115,8 +114,6 @@ body {
 									<th>문제 상태</th>
 								</tr>
 							</thead>
-
-							<!---在此插入信息-->
 							<%
 							ArrayList<ProblemBean> data2 = new ArrayList<ProblemBean>();
 							data2 = (ArrayList<ProblemBean>) request.getAttribute("data");
@@ -144,14 +141,8 @@ body {
 			</div>
 		</div>
 	</div>
-	<!--------------------------------------添加的模糊框------------------------>
-
-	<!-------------------------------------------------------------->
-
 	<form class="form-horizontal" method="post"
 		action="/books/AdminServlet">
-		<!--保证样式水平不混乱-->
-		<!-- 模态框（Modal） -->
 		<div class="modal fade" id="updatepwd" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
@@ -195,14 +186,9 @@ body {
 			<!-- /.modal -->
 		</div>
 	</form>
-	<!-------------------------------------------------------------->
-
-	<!-------------------------个人资料模糊框------------------------------------->
 
 	<form class="form-horizontal" method="post"
 		action="/books/AdminServlet">
-		<!--保证样式水平不混乱-->
-		<!-- 模态框（Modal） -->
 		<div class="modal fade" id="updateinfo" tabindex="-1" role="dialog"
 			aria-labelledby="ModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
@@ -213,15 +199,13 @@ body {
 						<h4 class="modal-title" id="ModalLabel">인적사항</h4>
 					</div>
 					<div class="modal-body">
-
-						<!--正文-->
 						<input type="hidden" name="tip" value="2"> <input
 							type="hidden" name="url" value="feedback">
 						<div class="form-group">
 							<label for="firstname" class="col-sm-3 control-label">이름</label>
 							<div class="col-sm-7">
 								<input type="text" class="form-control" id="name" name="name"
-									placeholder="请이름을 입력하세요"
+									placeholder="이름을 입력하세요"
 									value='<%out.write(admin.getName());%>'> <label
 									class="control-label" for="name" style="display: none"></label>
 							</div>

@@ -144,7 +144,7 @@ CREATE TABLE `problem` (
   `page` char(50) DEFAULT NULL, -- 问题的页面
   `body` char(255) DEFAULT NULL, -- 问题的描述
   `phone` char(20) DEFAULT NULL, -- 联系方式
-  `status` char(5) NOT NULL DEFAULT '未解决', -- 问题状态
+  `status` char(5) NOT NULL DEFAULT '미해결', -- 问题状态
   PRIMARY KEY (`pid`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=5000003 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 

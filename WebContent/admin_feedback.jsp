@@ -233,8 +233,6 @@ body {
 						<h4 class="modal-title" id="myModalLabel">비밀번호 변경</h4>
 					</div>
 					<div class="modal-body">
-
-						<!--正文-->
 						<input type="hidden" name="tip" value="1">
 						<input type="hidden" name="url" value="admin_feedback">
 						<div class="form-group">
